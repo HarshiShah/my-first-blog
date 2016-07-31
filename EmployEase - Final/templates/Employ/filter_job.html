@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EMPLOY-EASE</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body  >
+<nav class="navbar navbar-inverse navbar-fixed-top">
+
+
+
+    <center> <font size="8"  color="#ff4500">EMPLOY_EASE</font></center>
+</nav>
+<br/>
+<br/><br/><br/>
+<center>
+<font size="4">
+    <form method="POST" action="">
+{% csrf_token %}
+<label>PIN</label><br/><input type="text" name="textfield" value="None">
+        <br/><br/><label>Qualifications</label><br/><select name="value">
+    <option value="None">None</option>
+  <option value="10th pass">10th pass</option>
+  <option value="12th pass">12th pass</option>
+  <option value="UG">Under Graduate</option>
+  <option value="PG">Post Graduate</option>
+
+</select>
+<label>Skill set</label><br/><input type="text" name="skill" value="Any">
+
+        <br/><br/><label >Minimum Salary</label>
+<br/><input type="text" name="salary_from" value="1">
+
+<label >Maximum Salary</label>
+<br/><input type="text" name="salary_to" value="500000">
+
+       <br/><br/><label>Timing</label><br/> <select name="time">
+    <option value="ANYTIME">ANYTIME</option>
+  <option value="MORNING">MORNING</option>
+  <option value="AFTERNOON">AFTERNOON</option>
+  <option value="EVENING">EVENING</option>
+  <option value="NIGHT">NIGHT</option>
+</select>
+<button type="submit">Search</button>
+</form>
+
+    </font>
+    </center>
+</body>
+</html>
